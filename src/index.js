@@ -7,11 +7,14 @@ import allReducers from './reducers';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 
+
+// Create a store
 const store = createStore(
    allReducers,
    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
+// Wrap your app using provider and pass store as argument.
 
 ReactDOM.render(
 <Provider store={store}>

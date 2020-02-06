@@ -10,6 +10,8 @@ function App() {
   const isLoggedIn = useSelector(state=> state.isLoggedIn);
   const dispatch = useDispatch();
 
+  // Argument passed to increment() will be passed to action.
+  // The returned object from argument will be passed to reducers
   return (
     <div className="App">
       <h1>counter {counter} </h1>

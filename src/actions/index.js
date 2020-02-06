@@ -1,7 +1,7 @@
 const increment = (num) => {
-    return {
-        type:'INCREMENT',
-        payload: num
+    return {                            // This object will be returned to dispatcher
+        type:'INCREMENT',               
+        payload: num                    // This will be accessible to reducers through action.payload
      }
 }
 
